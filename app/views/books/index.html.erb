@@ -21,7 +21,7 @@
        <tr>
        	<!-- attachment_image_tag(bookに紐ずけられているuser),写真-->
         <th><%= attachment_image_tag(book.user, :image, :fill, 50, 50, class: "image") %></th>
-        <td><%= link_to book.book_title, book_path(book.id) %></td>
+        <td><%= link_to book.book_title, book_path(book.id), class: "book_#{@book.id}" %></td>
         <td><%= book.book_body %></td>
        </tr>
        <% end %>
