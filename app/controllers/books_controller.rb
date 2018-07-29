@@ -26,9 +26,6 @@ class BooksController < ApplicationController
     else
       redirect_to books_path(@book)
     end
-    # if @book.edit
-    # else redirect_to edit_book_path(@book)
-    # end
   end
 
   # def create
